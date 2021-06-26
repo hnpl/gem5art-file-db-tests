@@ -1,0 +1,29 @@
+{
+    "artifacts": {
+        "5fe43eb9-16d2-48be-9e8c-d06fe150db63": {
+            "_id": "5fe43eb9-16d2-48be-9e8c-d06fe150db63",
+            "name": "test-artifact",
+            "type": "kernel",
+            "documentation": "This is made to test things",
+            "command": "echo \"This is a test file\" > test-file.txt",
+            "path": "test-file.txt",
+            "hash": "a050576dc384f9f90da04a26819c6d78",
+            "git": {},
+            "cwd": ".",
+            "inputs": [],
+            "architecture": "",
+            "size": null,
+            "is_zipped": false,
+            "md5sum": "",
+            "url": "",
+            "supported_gem5_versions": "[]",
+            "version": "",
+            "extra": "{}"
+        }
+    },
+    "hashes": {
+        "a050576dc384f9f90da04a26819c6d78": [
+            "5fe43eb9-16d2-48be-9e8c-d06fe150db63"
+        ]
+    }
+}
