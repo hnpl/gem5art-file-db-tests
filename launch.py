@@ -46,7 +46,8 @@ disk_image = Artifact.registerArtifact(
     cwd = './',
     path = 'parsec.img',
     inputs = [],
-    documentation = 'Disk-image using Ubuntu 18.04 with m5 binary and PARSEC installed.'
+    documentation = 'Disk-image using Ubuntu 18.04 with m5 binary and PARSEC installed.',
+    supported_gem5_versions = ["v20-1", "v21-0"]
 )
 
 gem5_binary = Artifact.registerArtifact(
@@ -56,7 +57,8 @@ gem5_binary = Artifact.registerArtifact(
     cwd = 'gem5/',
     path =  'gem5/build/X86/gem5.fast',
     inputs = [gem5_repo,],
-    documentation = 'gem5 binary'
+    documentation = 'gem5 binary',
+    extra = {'abc': 'def'}
 )
 
 linux_binary = Artifact.registerArtifact(
