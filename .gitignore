@@ -1,0 +1,4 @@
+parsec.img
+vmlinux-4.19.83
+*.pyc
+__pycache__/
