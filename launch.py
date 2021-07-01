@@ -21,7 +21,7 @@ gem5_repo = Artifact.registerArtifact(
         git clone https://gem5.googlesource.com/public/gem5;
         cd gem5;
         git checkout v21.0.1.0;
-    '''
+    ''',
     typ = 'git repo',
     name = 'gem5',
     path =  'gem5/',
@@ -40,8 +40,7 @@ m5_binary = Artifact.registerArtifact(
 )
 
 disk_image = Artifact.registerArtifact(
-    command = 'wget http://dist.gem5.org/dist/v20-1/images/x86/ubuntu-18-04/parsec.img.gz;
-               tar xf parsec.img.gz',
+    command = 'wget http://dist.gem5.org/dist/v20-1/images/x86/ubuntu-18-04/parsec.img.gz; tar xf parsec.img.gz',
     typ = 'disk image',
     name = 'parsec-disk-image',
     cwd = './',
