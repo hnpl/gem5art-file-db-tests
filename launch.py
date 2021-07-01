@@ -62,12 +62,12 @@ gem5_binary = Artifact.registerArtifact(
 linux_binary = Artifact.registerArtifact(
     name = 'vmlinux-4.19.83',
     typ = 'kernel',
-    path = 'linux-stable/vmlinux-4.19.83',
-    cwd = 'linux-stable/',
+    path = 'vmlinux-4.19.83',
+    cwd = './',
     command = '''
     wget http://dist.gem5.org/dist/v20-1/kernels/x86/static/vmlinux-4.19.83;
     ''',
-    inputs = [experiments_repo, linux_repo,],
+    inputs = [experiments_repo],
     documentation = "kernel binary for v4.19.83"
 )
 
