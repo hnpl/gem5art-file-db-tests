@@ -97,4 +97,4 @@ if __name__ == "__main__":
     runs = starmap(createRun, product(benchmarks, sizes, cpus))
     # Run all of these experiments in parallel
     for run in runs:
-        run_gem5_instance.run()
+        run.run()
