@@ -3,3 +3,4 @@ vmlinux-4.19.83
 *.pyc
 __pycache__/
 gem5/
+db.json
